@@ -1,0 +1,76 @@
+// SASS VARIABLES
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+
+// CSS VARIABLES
+
+:root {
+  --teal-primary: #3eeddc;
+  --teal-dark: #3ac7b9;
+  --teal-light: #a5faf1;
+
+  --yellow-primary: #f7df40;
+  --yellow-dark: #d1bd3b;
+  --yellow-light: #f5e684;
+
+  --orange-primary: #fabb46;
+  --orange-dark: #d69b36;
+  --orange-light: #ffd084;
+
+  --blue-primary: #3fb9f2;
+  --blue-dark: #317da3;
+  --blue-light: #74c9ed;
+
+  --pink-primary: #e368c0;
+  --pink-dark: #d459ad;
+  --pink-light: #ff87d7;
+
+  --red-primary: #f53b3e;
+  --red-dark: #c71010;
+  --red-light: #f23f3f;
+
+  --grey-dark: #2e2e2e;
+  --grey-light: #d6d6d6;
+
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+  
+  --line: 1px solid var(--color-grey-light-2);
+}
+
+// RESET STYLES
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+
+  @media only screen and(max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--grey-dark);
+  background-color: var(--grey-light);
+  min-height: 100vh;
+} 

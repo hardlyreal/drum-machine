@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>Beat Machine</title>
+    </head>
+    <body>
+      <header class="header">
+          <h1>Beat<span>Machine</span></h1>
+      </header>
+      <div class="drum-machine">
+        <!-- ROW 1 -->
+        <div data-key="87" class="drum-machine__key drum-machine__key--top one">
+          <div class="icon">
+            <img src="img/clap.png" alt="Clap" >
+            <p>W</p>
+          </div>
+          
+        </div>
+        <div data-key="69" class="drum-machine__key drum-machine__key--top two">
+          <div class="icon">
+            <img src="img/cymbals.png" alt="Hi-hat" >
+            <p>E</p>
+          </div>
+        </div>
+        <div data-key="82" class="drum-machine__key drum-machine__key--top three">
+          <div class="icon">
+            <img src="img/speaker.png" alt="Sub" >
+            <p>R</p>
+          </div>
+        </div>
+        <!-- ROW 2 -->
+        <div data-key="83" class="drum-machine__key drum-machine__key--middle four">
+          <div class="icon">
+            <img src="img/cymbals.png" alt="Crash" >
+            <p>S</p>
+          </div>
+        </div>
+        <div data-key="68" class="drum-machine__key drum-machine__key--middle five">
+          <div class="icon">
+            <img src="img/bass-drum.png" alt="Tom Low" >
+            <p>D</p>
+          </div>
+        </div>
+        <div data-key="70" class="drum-machine__key drum-machine__key--middle six">
+          <div class="icon">
+            <img src="img/set.png" alt="Tom Middle" >
+            <p>F</p>
+          </div>
+        </div>
+        <!-- ROW 3 -->
+        <div data-key="88" class="drum-machine__key drum-machine__key--bottom seven">
+          <div class="icon">
+            <img src="img/snare.png" alt="Snare" >
+            <p>X</p>
+          </div>
+        </div>
+        <div data-key="67" class="drum-machine__key drum-machine__key--bottom eight">
+          <div class="icon">
+            <img src="img/drum.png" alt="Tom High" >
+            <p>C</p>
+          </div>
+        </div>
+        <div data-key="86" class="drum-machine__key drum-machine__key--bottom nine">
+          <div class="icon">
+            <img src="img/bell.png" alt="Bell" >
+            <p>V</p>
+          </div>
+        </div>
+      </div>
+      
+      <audio data-key="87" src="sounds/808/clap.wav"></audio>
+      <audio data-key="69" src="sounds/808/hat-open.wav"></audio>
+      <audio data-key="82" src="sounds/808/bass-drum-2.wav"></audio>
+      <audio data-key="83" src="sounds/808/hat-closed.wav"></audio>
+      <audio data-key="68" src="sounds/808/tom-l.wav"></audio>
+      <audio data-key="70" src="sounds/808/tom-m.wav"></audio>
+      <audio data-key="88" src="sounds/808/snare.wav"></audio>
+      <audio data-key="67" src="sounds/808/tom-h.wav"></audio>
+      <audio data-key="86" src="sounds/808/crash.wav"></audio>
+      <script src="js/app.js"></script>
+    </body>
+</html>
+

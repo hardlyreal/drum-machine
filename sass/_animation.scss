@@ -1,0 +1,108 @@
+@keyframes blink-top {
+  0% {
+    background-color: var(--teal-light);
+    transform: scale(1);
+  }
+  50% {
+    background-color: var(--teal-light);
+    transform: scale(1.05);
+  }
+
+  100% {
+    background-color: var(--teal-light);
+    transform: scale(1);
+  }
+}
+
+@keyframes blink-middle {
+  0% {
+    background-color: var(--orange-light);
+    transform: scale(1);
+  }
+  50% {
+    background-color: var(--orange-light);
+    transform: scale(1.05);
+  }
+
+  100% {
+    background-color: var(--orange-light);
+    transform: scale(1);
+  }
+}
+
+@keyframes blink-bottom {
+  0% {
+    background-color: var(--pink-light);
+    transform: scale(1);
+  }
+  50% {
+    background-color: var(--pink-light);
+    transform: scale(1.05);
+  }
+
+  100% {
+    background-color: var(--pink-light);
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.icon {
+  transition: all .2s;
+  animation: fade-in 2s ease 3s;
+  animation-fill-mode: backwards;
+}
+
+.one {
+  transition: all .2s;
+  animation: blink-top .5s ease 1s;
+}
+
+.two {
+  transition: all .1s;
+  animation: blink-top .5s ease 1.25s;
+}
+
+.three {
+  transition: all .1s;
+  animation: blink-top .5s ease 1.5s;
+}
+
+.four {
+  transition: all .1s;
+  animation: blink-middle .5s ease 1.75s;
+}
+
+.five {
+  transition: all .1s;
+  animation: blink-middle .5s ease 2s;
+}
+
+.six {
+  transition: all .1s;
+  animation: blink-middle .5s ease 2.25s;
+}
+
+.seven {
+  transition: all .1s;
+  animation: blink-bottom .5s ease 2.5s;
+}
+
+.eight {
+  transition: all .1s;
+  animation: blink-bottom .5s ease 2.75s;
+}
+
+.nine {
+  transition: all .1s;
+  animation: blink-bottom .5s ease 3s;
+}
